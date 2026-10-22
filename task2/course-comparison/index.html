@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curriculum Audit — Current and Proposed</title>
+<style>
+:root {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #201b2d;
+  background: #f7f6fb;
+}
+body { max-width: 1100px; margin: auto; padding: 24px; }
+h1, h2 { line-height: 1.2; }
+.panel, .controls, .stat {
+  background: white;
+  border: 1px solid #e5e0ee;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 14px 0;
+}
+.controls { display: flex; gap: 12px; flex-wrap: wrap; align-items: end; }
+label { display: flex; flex-direction: column; gap: 5px; font-size: .9rem; }
+select, input { font: inherit; padding: 8px; border: 1px solid #bbb3cc; border-radius: 7px; }
+button { padding: 9px 12px; border: 0; border-radius: 7px; background: #43336b; color: white; cursor: pointer; }
+table { width: 100%; border-collapse: collapse; background: white; font-size: .93rem; }
+th, td { text-align: left; padding: 10px; border-bottom: 1px solid #eee8f5; vertical-align: top; }
+th { background: #eee9f7; }
+.tag { display: inline-block; border-radius: 99px; padding: 3px 8px; background: #eee9f7; white-space: nowrap; }
+.stats { display: flex; gap: 12px; flex-wrap: wrap; }
+.stat { min-width: 150px; }
+small, .muted { color: #5e5869; }
+.notice { padding: 12px 14px; background: #fff4d6; border: 1px solid #e6cc7b; border-radius: 10px; }
+@media(max-width:650px) {
+  body { padding: 12px; }
+  table { font-size: .82rem; }
+  th, td { padding: 7px; }
+}
+</style>
+</head>
+<body>
+<h1>Curriculum Audit: Current Courses and Proposed Changes</h1>
+<p>This interactive tool accompanies a student proposal for curriculum improvement towards 2030. Recommendations are proposals, not official university decisions.</p>
+
+<div class="notice">
+  <strong>Credit baseline:</strong> The Semester I–VIII course list totals 163 credits. The overall academic baseline used for this proposal is 166 credits, based on the supplied academic record. Semester totals remain as listed in the curriculum map.
+</div>
+
+<div class="controls">
+  <label>Semester
+    <select id="semester">
+      <option value="all">All semesters</option>
+      <option value="I">Semester I</option>
+      <option value="II">Semester II</option>
+      <option value="III">Semester III</option>
+      <option value="IV">Semester IV</option>
+      <option value="V">Semester V</option>
+      <option value="VI">Semester VI</option>
+      <option value="VII">Semester VII</option>
+      <option value="VIII">Semester VIII</option>
+    </select>
+  </label>
+
+  <label>Proposed action
+    <select id="action">
+      <option value="all">All actions</option>
+      <option value="KEEP">KEEP</option>
+      <option value="UPDATE">UPDATE</option>
+      <option value="REDUCE">REDUCE</option>
+      <option value="ADD">ADD</option>
+    </select>
+  </label>
+
+  <label>Search course or code
+    <input id="search" type="search" placeholder="e.g. DBMS, DS307">
+  </label>
+
+  <button id="reset" type="button">Reset filters</button>
+</div>
+
+<div class="stats">
+  <div class="stat"><small>Semesters I–VI</small><div><strong>132 credits</strong></div></div>
+  <div class="stat"><small>Semester VII</small><div><strong>16 credits</strong></div></div>
+  <div class="stat"><small>Semester VIII</small><div><strong>15 credits</strong></div></div>
+  <div class="stat"><small>Total academic baseline</small><div><strong>166 credits</strong></div></div>
+</div>
+
+<div class="panel">
+  <h2>Proposed Credit Calculator</h2>
+  <p>The affected set includes 11 existing courses whose assessed outcomes are proposed for improvement. Each course is counted once.</p>
+
+  <div class="controls">
+    <label>Total academic baseline credits
+      <input id="denom" type="number" min="1" value="166">
+    </label>
+
+    <label>Unique affected credits
+      <input id="affected" type="number" min="0" value="36">
+    </label>
+
+    <div>
+      <strong id="share">Share: 21.69%</strong><br>
+      <small id="target">Within 20–25% target</small>
+    </div>
+  </div>
+
+  <p id="calcNote" class="muted">This is a planning calculation based on the 166-credit academic baseline. It does not mean that new credits have been approved.</p>
+</div>
+
+<h2>Course List and Recommendation</h2>
+<p class="muted">KEEP preserves the course's foundational purpose. UPDATE strengthens assessed practice. ADD is conditional on a genuine gap. No course is marked REDUCE without evidence of duplication.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Semester</th>
+  <th>Code</th>
+  <th>Course</th>
+  <th>Credits</th>
+  <th>Action</th>
+  <th>Reason</th>
+</tr>
+</thead>
+<tbody id="rows"></tbody>
+</table>
+
+<script>
+const courses = [
+["I","EC101","Basic Electronics",4,"KEEP","Preserve foundational engineering outcomes."],
+["I","CHY101","Chemistry",4,"KEEP","Preserve required foundational outcomes."],
+["I","CS101","Computer Programming",4,"KEEP","Core programming foundation."],
+["I","MT101","Digital Fabrication",3,"KEEP","Preserve required course outcomes."],
+["I","EG101","English Language Skills",3,"KEEP","Communication supports technical work."],
+["I","HS101","Essence of Indian Traditional Knowledge",0,"KEEP","Zero-credit course entry."],
+["I","MA101","Linear Algebra and Ordinary Differential Equations",3,"KEEP","Mathematical foundation for AI and data."],
+
+["II","CS102","Data Structures",4,"KEEP","Core programming and problem-solving skills."],
+["II","MT102","Engineering Graphics",3,"KEEP","Preserve required course outcomes."],
+["II","CH102","Environmental Sciences",2,"KEEP","Preserve required course outcomes."],
+["II","MA102","Higher Calculus",3,"KEEP","Mathematical foundation."],
+["II","DS101","Introduction to AI and DS",3,"KEEP","Introductory programme foundation."],
+["II","PH101","Physics",5,"KEEP","Preserve required foundational outcomes."],
+["II","EG102","Professional Communication",3,"KEEP","Assess technical writing and clear presentations."],
+
+["III","DS201","Artificial Intelligence",3,"KEEP","Preserve AI foundations."],
+["III","CS206","Database Management Systems",4,"KEEP","Core data modelling and querying."],
+["III","MA202","Discrete Mathematics",3,"KEEP","Logic and discrete foundations."],
+["III","EC201","Introduction to IoT",3,"KEEP","Preserve required systems outcomes."],
+["III","ML201","Mathematical Essentials for Machine Learning",3,"KEEP","Preserve mathematical depth."],
+["III","CS201","Object Oriented Programming Concepts",4,"KEEP","Core software design foundation."],
+["III","CR201","Power Skills-I",1,"KEEP","Assess observable communication and teamwork."],
+["III","HS201","Dynamics of Social Change",3,"KEEP","Preserve interdisciplinary outcomes."],
+
+["IV","CS204","Computer Organization and Architecture",3,"KEEP","Count the course once; a retake is not a new course."],
+["IV","CS203","Design and Analysis of Algorithms",3,"KEEP","Preserve algorithmic foundations."],
+["IV","MG201","Engineering Economics and Management",3,"KEEP","Retain cost and management foundations."],
+["IV","DS202","Industry Coding Practice (Python/R)",3,"UPDATE","Assess Git, tests, debugging, code review and reproducibility."],
+["IV","DS304","Machine Learning",3,"UPDATE","Assess baselines, leakage checks, metrics and error analysis."],
+["IV","CS302","Operating Systems",4,"KEEP","Preserve systems foundations."],
+["IV","CR202","Power Skills-II",1,"KEEP","Assess teamwork and technical explanation."],
+["IV","CS205","Web-Enabled Technologies",4,"UPDATE","Assess API contracts, authentication, validation, error handling and API tests."],
+
+["V","DS303","Blockchain Technology",3,"KEEP","Do not reduce a course based on trends alone."],
+["V","CS306","Computer Networks",4,"KEEP","Networking foundation for deployed systems."],
+["V","HS301","Constitution of India",0,"KEEP","Zero-credit course entry."],
+["V","DS305","Data Wrangling and Visualization",3,"UPDATE","Assess data profiling, validation and reproducible transformations."],
+["V","DS306","Deep Learning",4,"UPDATE","Require reproducible experiments and error analysis."],
+["V","CS415","Ethical Hacking",3,"KEEP","Preserve security learning outcomes."],
+["V","ML301","Metaheuristic Optimization",3,"KEEP","Preserve foundations pending overlap evidence."],
+["V","CR301","Power Skills-III",1,"KEEP","Assess collaborative communication."],
+
+["VI","DS307","Big Data Systems",3,"UPDATE","Assess an end-to-end pipeline and data-quality checks."],
+["VI","EC308","Embedded Systems",3,"KEEP","Preserve required systems outcomes."],
+["VI","ML302","Fuzzy and Rough Set Theory",3,"KEEP","Preserve foundations pending overlap evidence."],
+["VI","CR302","Power Skills-IV",1,"KEEP","Assess professional presentation and collaboration."],
+["VI","ML303","Reinforcement Learning",3,"UPDATE","Assess baselines, reproducibility and limitations."],
+["VI","SP301","Special Project",3,"UPDATE","Require repository, tests, documentation and demonstration."],
+["VI","DS311","Natural Language Processing",3,"UPDATE","Assess evaluation and grounded-output checks."],
+
+["VII","CV","Computer Vision",3,"KEEP","Preserve course foundations."],
+["VII","CS307","Cloud Computing",4,"UPDATE","Assess monitoring, access control, cost and recovery."],
+["VII","CS413","Quantum Computing",3,"KEEP","Preserve course foundations."],
+["VII","DS408","Generative AI",3,"UPDATE","Assess grounding, evaluation, privacy and safe use."],
+["VII","HS206","Professional Ethics",3,"KEEP","Assess applied ethical case analysis."],
+
+["VIII","TBD","Internship",15,"KEEP","Use measurable learning outcomes and evidence of practical work."]
+];
+
+const body = document.getElementById("rows");
+
+function render() {
+  const sem = document.getElementById("semester").value;
+  const act = document.getElementById("action").value;
+  const query = document.getElementById("search").value.toLowerCase().trim();
+
+  const filtered = courses.filter(course =>
+    (sem === "all" || course[0] === sem) &&
+    (act === "all" || course[4] === act) &&
+    course.join(" ").toLowerCase().includes(query)
+  );
+
+  body.innerHTML = filtered.map(course => `
+    <tr>
+      <td>${course[0]}</td>
+      <td>${course[1]}</td>
+      <td>${course[2]}</td>
+      <td>${course[3]}</td>
+      <td><span class="tag">${course[4]}</span></td>
+      <td>${course[5]}</td>
+    </tr>
+  `).join("");
+
+  if (!filtered.length) {
+    body.innerHTML = '<tr><td colspan="6">No matching courses.</td></tr>';
+  }
+}
+
+function calculate() {
+  const denominator = Number(document.getElementById("denom").value);
+  const affected = Number(document.getElementById("affected").value);
+  const share = document.getElementById("share");
+  const target = document.getElementById("target");
+  const note = document.getElementById("calcNote");
+
+  if (!(denominator > 0) || !(affected >= 0) || affected > denominator) {
+    share.textContent = "Share: not calculated";
+    target.textContent = "Enter valid values";
+    note.textContent = "Affected credits must be between zero and the total credits.";
+    return;
+  }
+
+  const percentage = affected / denominator * 100;
+  share.textContent = `Share: ${percentage.toFixed(2)}%`;
+
+  if (percentage >= 20 && percentage <= 25) {
+    target.textContent = "Within 20–25% target";
+  } else if (percentage < 20) {
+    target.textContent = "Below 20–25% target";
+  } else {
+    target.textContent = "Above 20–25% target";
+  }
+
+  note.textContent =
+    "Planning calculation only. Confirm the affected course list and avoid double-counting before submission.";
+}
+
+["semester", "action"].forEach(id =>
+  document.getElementById(id).addEventListener("change", render)
+);
+
+document.getElementById("search").addEventListener("input", render);
+["denom", "affected"].forEach(id =>
+  document.getElementById(id).addEventListener("input", calculate)
+);
+
+document.getElementById("reset").addEventListener("click", () => {
+  document.getElementById("semester").value = "all";
+  document.getElementById("action").value = "all";
+  document.getElementById("search").value = "";
+  render();
+});
+
+render();
+calculate();
+</script>
+</body>
+</html>
