@@ -41,6 +41,6 @@ See [References](sources/references.md) for official curriculum resources and jo
 
 ## Submission Links
 
-- **GitHub repository:** To be added after publishing.
-- **GitHub release:** To be added after creating the release.
-- **Full commit URL:** To be added after the final submission commit.
+- **GitHub repository:** https://github.com/meghana-1603/College-Workflow-Curriculum-Challenge-
+- **GitHub release:** https://github.com/meghana-1603/College-Workflow-Curriculum-Challenge-/releases/tag/v1.0.0
+- **Full commit URL:** https://github.com/meghana-1603/College-Workflow-Curriculum-Challenge-/commit/a5aa852
