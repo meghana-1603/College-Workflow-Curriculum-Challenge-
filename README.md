@@ -33,14 +33,13 @@ Files:
 - [Individual Contribution and Limitations](task2/individual-contribution-and-limitations.md)
 - [Interactive Course Comparison](task2/course-comparison/index.html)
 
-The proposal is not an official university curriculum revision. The applicable 2023–2027 batch curriculum and the three-credit difference between the listed semester totals and the stated overall baseline require official reconciliation. Feedback and time-savings claims are not fabricated.
+The proposal is not an official university curriculum revision. The 166-credit planning baseline comprises 163 listed Semester I–VIII credits plus 3 academic credits for IP201 — Internship-I. The total still requires verification against the official curriculum applicable to the 2023–2027 batch. Feedback and time-savings claims are not fabricated.
 
 ## Sources
 
 See [References](sources/references.md) for official curriculum resources and job-posting sources.
 
-## Submission Links
-
+## Submission Links## Submission Links
 - **GitHub repository:** https://github.com/meghana-1603/College-Workflow-Curriculum-Challenge-
-- **GitHub release:** https://github.com/meghana-1603/College-Workflow-Curriculum-Challenge-/releases/tag/v1.0.0
-- **Full commit URL:** https://github.com/meghana-1603/College-Workflow-Curriculum-Challenge-/commit/6d87db9ff2df89902bf86030804869b23a855c9d
+- **GitHub release:** https://github.com/meghana-1603/College-Workflow-Curriculum-Challenge-/releases/tag/v1.0.1
+- **Full commit URL:** https://github.com/meghana-1603/College-Workflow-Curriculum-Challenge-/commit/b6b2b6a38bc9104b473b90a223f0f3b1c76bb91f
