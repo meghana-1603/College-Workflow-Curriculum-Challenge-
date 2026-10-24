@@ -17,9 +17,9 @@ The proposal uses an **overall academic baseline of 166 credits**. The listed Se
 
 ## 1. Starting point and confidence
 
-The student-record map in `curriculum-map.md` is the working baseline. Semesters I–VI total 132 listed course credits/units. Semester VII has 16 listed credits, including Professional Ethics (3) and Computer Vision (provisionally 3). Semester VIII internship is reported as 15 credits. Thus, Semesters I–VIII total 163 listed credits.
+The student-record map in `curriculum-map.md` is the working baseline. Semesters I–VI total 132 listed credits, Semester VII has 16 listed credits, and Semester VIII internship is reported as 15 credits. The listed Semester I–VIII totals therefore sum to 163 credits.
 
-The 166-credit planning baseline comprises the 163 listed Semester I–VIII credits and 3 academic credits for IP201 — Internship-I. Semester-level totals are preserved as supplied. The applicable batch syllabus and regulations must be checked before the calculation is treated as an officially verified programme-credit total.
+For planning purposes, this report uses a provisional 166-credit baseline by adding 3 academic credits for IP201 — Internship-I. This assumes IP201 is not already included in the 163-credit total. The assumption has not been conclusively verified against the official curriculum and regulations applicable to the 2023–2027 batch; therefore, 166 must not be represented as the officially confirmed programme-credit total.
 
 The official IFHE/ICFAITech pages identify public curriculum resources, but the publicly available structure and older programme PDF have not yet been conclusively shown to match this student's admission batch. The current admissions page alone is not sufficient proof.
 
@@ -36,7 +36,7 @@ The official IFHE/ICFAITech pages identify public curriculum resources, but the 
 | 7 | DS307 Big Data Systems | UPDATE | Include a small end-to-end pipeline with ingestion, transformation, data-quality checks, orchestration concepts and cost/performance trade-offs. |
 | 8 | CS307 Cloud Computing; verify code, title and credits against the batch syllabus | UPDATE | Assess deployment architecture, IAM/access control, logs/monitoring, cost awareness, backup/recovery and a documented deployment or equivalent lab. |
 | 9 | DS408 Generative AI; verify provisional code | UPDATE | Add retrieval/grounding, evaluation sets, hallucination/error analysis, privacy, prompt-injection awareness and human verification. A demo alone is insufficient evidence of quality. |
-| 10 | DS304 Machine Learning; DS306 Deep Learning; DS311 NLP; ML303 Reinforcement Learning | UPDATE | Keep core theory; require baseline comparisons, data-leakage checks, appropriate metrics, error analysis, reproducible experiments and documented limitations. |
+| 10 | DS304 Machine Learning; DS306 Deep Learning; DS311 NLP; ML303 Reinforcement Learning; SP301 Special Project | UPDATE | For Machine Learning, Deep Learning, NLP and Reinforcement Learning, retain core theory and assess baseline comparisons, data-leakage checks, appropriate metrics, error analysis, reproducible experiments and documented limitations. For SP301 — Special Project, incorporate the proposed workflow capstone or equivalent approved project assessment, including testing, failure recovery, evaluation and limitations, where the existing project outcomes and regulations permit. |
 | 11 | Proposed software testing/CI practice | ADD, conditional | If no equivalent compulsory assessed coverage exists, add a small lab/module or embed equivalent assessed work in existing coding/web courses. Check the published programme's existing Software Testing course before adding a duplicate. |
 | 12 | Proposed data engineering and responsible-AI assessment, integrated with the Task 1 workflow capstone | ADD, conditional | Add assessed pipeline/data-quality and AI-governance tasks through an elective, lab or capstone where credit rules permit. If new credits are not permitted, replace a duplicative assessment or use an approved interdisciplinary elective. |
 
@@ -84,15 +84,10 @@ The affected-course set consists of these 11 existing courses:
 
 The affected credits represent courses whose assessed outcomes are proposed for improvement. They are not additional credits, and the proposal does not claim that new credits have been approved.
 
-Before final submission:
+**Credit reconciliation and approval conditions**
 
-1. Verify the official denominator against the applicable batch syllabus and regulations.
-2. Confirm required credits and select only one valid option from each mutually exclusive elective group; do not sum all elective choices.
-3. Identify updated, reduced and added credits separately, avoiding double-counting.
-4. Confirm that unchanged and changed credits reconcile with the approved programme total.
-5. If regulations prevent a new credit-bearing course, propose an equivalent assessment or approved elective route.
+The 21.69% affected-credit share is provisional and depends on verification of the applicable 2023–2027 batch syllabus and regulations. The final calculation must use the approved programme-credit total, count only one valid option from each mutually exclusive elective group, and avoid double-counting updated, reduced or added credits. The unchanged and affected credits must reconcile with the approved programme total. If regulations do not permit a new credit-bearing course, equivalent assessed work may be embedded in an existing course or offered through an approved elective route.
 
-The interactive calculator is editable for transparent planning; it does not establish official approval.
 
 ## 6. Task 1-derived proposed lab/capstone
 

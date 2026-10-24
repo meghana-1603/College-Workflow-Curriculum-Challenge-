@@ -21,16 +21,15 @@ The investigation is limited. It uses two past event examples, with submission d
 
 The current process, as I understand and have experienced it, is:
 
-1. The club head plans an event with club members.
-2. The club head discusses the proposed event with the Student Affairs Dean before preparing/submitting forms, to check whether the event is acceptable.
+1. The club head plans the event with club members.
+2. The club head discusses the proposed event with the Student Affairs Dean before preparing or submitting the forms.
 3. The club head informs the club mentor.
-4. The event proposal and budget forms are submitted to the Dean.
+4. The event proposal and budget forms are submitted to the Student Affairs Dean.
 5. The club mentor and Dean sign the forms.
-6. The Dean forwards the proposal to the Director.
-7. The event is conducted after approval is received.
+6. The Dean forwards the proposal to the Director for approval.
+7. The event is conducted only after the required approval is received.
 
-The proposal should generally be submitted about one week before the planned event.Submission may be physical or digital; the method used for the two examples was not recorded in this evidence log.
-
+The proposal should generally be submitted about one week before the planned event. Submission may be physical or digital; the method used for the two examples was not recorded in this evidence log.
 ### 2.2 Scope boundaries
 
 This investigation focuses on the visibility of a proposal’s status and the effort involved in following up. It does not assess individual staff performance, challenge the approval hierarchy, or assume that every delay is avoidable.
@@ -164,12 +163,10 @@ No actual time-and-motion measurements were collected. The figures below are **i
 
 The assumed proposal volume corresponds to approximately 0.33–0.50 requests per month.
 
-- **Potential gross follow-up effort avoided per month:** 0.33–0.50 requests × 15–45 minutes × 25–50% = approximately **1.25–11.25 minutes per month**.
+- **Potential gross follow-up effort avoided per month:** 0.33–0.50 requests × 15–45 minutes × 25–50% = approximately 1.25–11.25 minutes per month.
 - **Setup effort amortised over 12 months:** 4–8 hours ÷ 12 = 20–40 minutes per month.
 - **Ongoing effort:** 15–30 minutes per month for maintenance, support and review.
-- **Illustrative net monthly effort change:** Gross follow-up effort avoided − amortised setup effort − ongoing effort = approximately **−68.75 to −23.75 minutes per month**.
-
-A negative result indicates additional effort under these assumptions. The calculation does not assume that the tracker reduces correction/rework effort, approval waiting time, or the time taken by the Director to make a decision. The result is sensitive to actual proposal volume and the time required to maintain accurate status information.
+- **Illustrative net monthly effort change:** Gross follow-up effort avoided − amortised setup effort − ongoing effort. Using the least favourable assumptions: 1.25 − 40 − 30 = −68.75 minutes per month. Using the most favourable assumptions: 11.25 − 20 − 15 = −23.75 minutes per month. The resulting illustrative range is **−68.75 to −23.75 minutes per month**, meaning the tracker may add effort rather than save it under these assumptions. These are illustrative estimates, not measured results.
 
 ### Interpretation and decision
 

@@ -44,3 +44,4 @@ For each requirement, compare the official course description with at least one 
 ## Conclusion
 
 The postings illustrate relevant skills in AI engineering and data engineering. They support considering more assessed practice in model evaluation, data quality, pipeline development, testing and monitoring. Any curriculum change should be based on verified syllabus and assessment evidence rather than course titles alone.
+**Evidence limitation:** This comparison uses a small sample of public job postings and is not representative of the entire entry-level hiring market. Some postings may no longer be available, and the requirements of an AI Engineer role may not correspond to those of a new graduate. The comparison identifies possible curriculum gaps rather than guaranteeing job eligibility.

@@ -7,7 +7,7 @@
 **Status:** Proposed redesign, not an approved curriculum change
 
 ## 1. Baseline
-The overall academic credit baseline is 166 credits. The listed Semester I–VIII course totals sum to 163 credits. IP201 — Internship-I contributes another 3 academic credits, giving an overall total of 166 credits. Internship-I is part of the academic programme, not an additional component outside it. The total must still be checked against the official curriculum applicable to the 2023–2027 batch.
+The listed Semester I–VIII course totals sum to 163 credits. For planning purposes, this proposal uses a provisional overall academic baseline of 166 credits, assuming that IP201 — Internship-I contributes 3 academic credits not already included in the 163-credit total. Internship-I is part of the academic programme, not an additional component outside it. This assumption must be verified against the official curriculum and regulations applicable to the 2023–2027 admission batch before the 166-credit total is treated as confirmed.
 
 | Semester | Listed baseline credits |
 |---|---:|

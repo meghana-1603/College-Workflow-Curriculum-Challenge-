@@ -1,6 +1,6 @@
 # Voluntary Validation Log
 
-**Status as of 21 October 2026:** No faculty or recent-graduate feedback has been obtained or documented for this proposal.
+**Status as of 21 October 2026:**No faculty or recent-graduate feedback has been obtained or documented for this proposal.
 
 ## 1. Validation objective
 

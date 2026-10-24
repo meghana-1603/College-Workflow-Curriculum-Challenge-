@@ -1,8 +1,12 @@
 # AI-Assisted Exercise Verification Log
 
-**Purpose:** Document five AI-assisted learning exercises across programming, databases, machine learning, data quality, and generative AI/NLP.
+## Purpose
 
-**Important:** The prompts and responses below were produced in this ChatGPT conversation on 22 October 2026. The results were checked through manual reasoning against the supplied code, synthetic data, calculations, or source passage. Local Java and SQL execution and independent review against course materials have not been completed. These limitations are stated honestly rather than presenting unperformed tests as completed.
+Document five AI-assisted learning exercises across programming, databases, machine learning, data quality, and generative AI/NLP.
+
+## Important Note
+
+The prompts and responses below were produced in this ChatGPT conversation on 22 October 2026. The results were checked through manual reasoning against the supplied code, synthetic data, calculations, or source passage. Local Java and SQL execution and independent review against course materials have not been completed. These limitations are stated honestly rather than presenting unperformed tests as completed.
 
 ## Shared Record Information
 
@@ -27,22 +31,22 @@ Ask the AI to explain a short Java program, predict its output, and identify an 
 **Prompt used:**
 
 > Explain this Java program line by line. Predict the exact output and explain why. Also identify one edge case or limitation.
->
-> ```java
-> public class Main {
->     public static void main(String[] args) {
->         int[] numbers = {2, 4, 6, 8};
->         int total = 0;
->
->         for (int i = 0; i < numbers.length; i++) {
->             total += numbers[i];
->         }
->
->         System.out.println(total);
->         System.out.println(numbers.length);
->     }
-> }
-> ```
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {2, 4, 6, 8};
+        int total = 0;
+
+        for (int i = 0; i < numbers.length; i++) {
+            total += numbers[i];
+        }
+
+        System.out.println(total);
+        System.out.println(numbers.length);
+    }
+}
+```
 
 ### Actual AI response
 
@@ -176,16 +180,16 @@ Use a synthetic table containing missing values, duplicate rows, an invalid date
 **Prompt used:**
 
 > For this synthetic table, propose data-quality checks and a reproducible cleaning plan. Do not silently delete rows. Explain how every change would be logged.
->
-> ```text
-> id, date, amount
-> A1, 2026-01-03, 100
-> A2, 2026-01-04, NULL
-> A3, 2026-01-04, 50
-> A3, 2026-01-04, 50
-> A4, 2026-13-02, 70
-> A5, 2026-01-06, -5
-> ```
+
+```text
+id, date, amount
+A1, 2026-01-03, 100
+A2, 2026-01-04, NULL
+A3, 2026-01-04, 50
+A3, 2026-01-04, 50
+A4, 2026-13-02, 70
+A5, 2026-01-06, -5
+```
 
 ### Actual AI response
 
@@ -223,9 +227,12 @@ Use a short, self-created passage and ask the AI two questions.
 >
 > Passage:
 >
-> The campus library opens at 8:30 a.m. on weekdays.  
-> Students may borrow up to four books for 14 days.  
-> The library is closed on Sundays.  
+> The campus library opens at 8:30 a.m. on weekdays.
+>
+> Students may borrow up to four books for 14 days.
+>
+> The library is closed on Sundays.
+>
 > A valid student ID is required to borrow books.
 >
 > Questions:
