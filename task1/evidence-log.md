@@ -58,3 +58,7 @@ The evidence does not establish:
 If permission is granted, future measurement could record the submission date, confirmed status-change dates, correction requests, official decision date, status enquiries, tracker upkeep time, and any stale or inaccurate entries. Access should be restricted, unnecessary personal data excluded, and official approval records treated as authoritative.
 
 No additional measurements are claimed to have been collected for this report.
+
+### Illustrative effort scenario — not observed evidence
+
+The effort assumptions and sensitivity calculation in Task 1, Section 8, are planning assumptions rather than observed facts. They are included to show how a proposed tracker could be evaluated without inventing measurements. They do not establish actual follow-up frequency, correction time, time saved, or ROI. A permitted pilot and actual before-and-after measurements would be required to evaluate the tracker fairly.

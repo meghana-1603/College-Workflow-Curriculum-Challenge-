@@ -145,23 +145,39 @@ The following are hypothetical tests for the proposed tracker, not tests conduct
 
 These tests describe expected behaviour only. They do not demonstrate that a tracker has been built, deployed, or validated.
 
-## 8. Estimated Net Time Savings
+## 8. Effort and value calculation
 
-A reliable savings figure cannot be calculated from the available evidence. Follow-up visit counts, actual duration, correction effort, tracker maintenance, and support requirements were not measured.
+### Evidence status
 
-A future pilot could record:
+No actual time-and-motion measurements were collected. The figures below are **illustrative assumptions for sensitivity analysis only**, not measured facts about the club or university. They must not be interpreted as proven savings or actual return on investment.
 
-- Time spent on status enquiries before the tracker
-- Time spent checking the tracker and following up afterward
-- Time required to enter and maintain updates
-- Number of stale or incorrect status entries
-- Time spent correcting forms, separately from status enquiries
+| Input                                               |                    Illustrative assumption |
+| --------------------------------------------------- | -----------------------------------------: |
+| Event proposals                                     | 4–6 per year; unverified personal estimate |
+| Follow-up effort per request                        |                              15–45 minutes |
+| Correction/rework effort per request                |                               0–30 minutes |
+| Follow-up effort potentially avoided by the tracker |                                     25–50% |
+| Initial tracker setup                               |                                  4–8 hours |
+| Monthly maintenance, support and review             |                              15–30 minutes |
 
-The relevant calculation would be:
+### Calculation
 
-**Net time saved = follow-up time avoided − setup effort − maintenance effort − support and review effort.**
+The assumed proposal volume corresponds to approximately 0.33–0.50 requests per month.
 
-If a future pilot assumes that some follow-up effort can be avoided, that assumption must be labelled and compared against measured results. No percentage reduction or net savings is claimed in this report.
+- **Potential gross follow-up effort avoided per month:** 0.33–0.50 requests × 15–45 minutes × 25–50% = approximately **1.25–11.25 minutes per month**.
+- **Setup effort amortised over 12 months:** 4–8 hours ÷ 12 = 20–40 minutes per month.
+- **Ongoing effort:** 15–30 minutes per month for maintenance, support and review.
+- **Illustrative net monthly effort change:** gross follow-up effort avoided − amortised setup effort − ongoing effort = approximately **−23.75 to −48.75 minutes per month**.
+
+A negative result indicates additional effort under these assumptions. The calculation does not assume that the tracker reduces correction/rework effort, approval waiting time, or the time taken by the Director to make a decision. The result is sensitive to actual proposal volume and the time required to maintain accurate status information.
+
+### Interpretation and decision
+
+Under this low-volume illustrative scenario, a new tracker may not be justified by time savings alone. A simpler existing spreadsheet or an approved update to an existing record may be more proportionate. The potential benefit of clearer status visibility should be considered separately from time savings.
+
+Before recommending adoption, an authorised pilot would need to record actual proposal volume, follow-up and correction effort, tracker setup and upkeep, status accuracy, and user feedback. Compare the same measures before and during the pilot. Continue only if the observed benefit justifies the effort and the existing approval process remains authoritative.
+
+No actual time savings, financial savings, percentage reduction, or positive ROI are claimed.
 
 ## 9. Risks, Unknowns, and Abandonment Criteria
 
