@@ -41,5 +41,3 @@ See [References](sources/references.md) for official curriculum resources and jo
 
 ## Submission Link
 - **GitHub repository:** https://github.com/meghana-1603/College-Workflow-Curriculum-Challenge-
-- **GitHub release:** https://github.com/meghana-1603/College-Workflow-Curriculum-Challenge-/releases/tag/v1.0.1
-- **Full commit URL:** https://github.com/meghana-1603/College-Workflow-Curriculum-Challenge-/commit/b6b2b6a38bc9104b473b90a223f0f3b1c76bb91f
