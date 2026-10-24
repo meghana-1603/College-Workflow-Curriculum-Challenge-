@@ -13,17 +13,13 @@
 
 This proposal preserves mathematics, programming, algorithms, databases, operating systems, networks, machine learning and other foundational subjects while recommending more assessed practice in software testing, data engineering, cloud delivery, generative-AI evaluation and responsible AI.
 
-The proposal uses an **overall academic baseline of 166 credits**. The listed course totals for Semesters I–VIII add up to **163 credits**; the overall baseline includes the full supplied academic record. Semester-level course totals remain as listed in `curriculum-map.md`. The additional difference is included in the overall baseline and is not presented as a separate semester in the interactive course comparison.
-
-Eleven existing courses are proposed for assessment-focused updates. Their credits total **36**, representing **21.69% of the 166-credit baseline**. This is a planning calculation, not a claim that new credits have been approved or that the official curriculum has been changed.
-
-All recommendations remain conditional on verification of the applicable 2023–2027 curriculum, credit rules, prerequisite rules and approval by the university.
+The proposal uses an **overall academic baseline of 166 credits**. The listed Semester I–VIII course totals add up to **163 credits**; IP201 — Internship-I contributes another **3 academic credits**, giving 166 credits overall. Internship-I is part of the academic programme, not an additional component outside it. This remains a planning baseline pending verification against the official curriculum applicable to the 2023–2027 batch.
 
 ## 1. Starting point and confidence
 
 The student-record map in `curriculum-map.md` is the working baseline. Semesters I–VI total 132 listed course credits/units. Semester VII has 16 listed credits, including Professional Ethics (3) and Computer Vision (provisionally 3). Semester VIII internship is reported as 15 credits. Thus, Semesters I–VIII total 163 listed credits.
 
-The overall academic baseline used for the proposal is 166 credits, based on the supplied academic record. The semester-level totals have not been artificially adjusted to force them to add up to the overall baseline. The applicable batch syllabus and regulations must be checked before the proposal is treated as an official programme-credit calculation.
+The 166-credit planning baseline comprises the 163 listed Semester I–VIII credits and 3 academic credits for IP201 — Internship-I. Semester-level totals are preserved as supplied. The applicable batch syllabus and regulations must be checked before the calculation is treated as an officially verified programme-credit total.
 
 The official IFHE/ICFAITech pages identify public curriculum resources, but the publicly available structure and older programme PDF have not yet been conclusively shown to match this student's admission batch. The current admissions page alone is not sufficient proof.
 

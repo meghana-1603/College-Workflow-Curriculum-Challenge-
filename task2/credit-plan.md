@@ -7,8 +7,7 @@
 **Status:** Proposed redesign, not an approved curriculum change
 
 ## 1. Baseline
-
-The overall academic credit baseline is 166 credits. The supplied Semester I–VIII course list totals 163 credits; the 3-credit difference requires reconciliation against the official curriculum applicable to the 2023–2027 batch.
+The overall academic credit baseline is 166 credits. The listed Semester I–VIII course totals sum to 163 credits. IP201 — Internship-I contributes another 3 academic credits, giving an overall total of 166 credits. Internship-I is part of the academic programme, not an additional component outside it. The total must still be checked against the official curriculum applicable to the 2023–2027 batch.
 
 | Semester | Listed baseline credits |
 |---|---:|
@@ -98,7 +97,8 @@ This percentage represents the credits associated with courses selected for prop
 | Semester VI | 19 | 12 | DS307, SP301, DS311, ML303 |
 | Semester VII | 16 | 7 | CS307, DS408 |
 | Semester VIII | 15 | 0 | None |
-| **Total of listed semester courses** | **163** | **36** | **11 courses** |
+| IP201 — Internship-I (academic course; included in programme total) | 3 | 0 | Not among the 11 selected courses |
+| **Overall academic credit baseline** | **166** | **36** | **11 courses** |
 
 The affected-credit total is calculated as follows:
 
@@ -108,8 +108,7 @@ The affected-credit total is calculated as follows:
 - Semester VII: 4 + 3 = 7 credits.
 - **Total affected credits:** 10 + 7 + 12 + 7 = **36 credits**.
 
-The overall academic baseline remains 166 credits for planning purposes. The difference between this baseline and the 163 credits in the listed semester totals must be reconciled against the applicable official curriculum; it does not change the calculation above.
-
+The listed Semester I–VIII course totals sum to 163 credits. IP201 — Internship-I contributes another 3 academic credits, giving an overall academic baseline of 166 credits. Internship-I is part of the academic programme. The affected-credit calculation remains 36 credits across the 11 selected courses.
 ## 6. Proposed learning and assessment improvements
 
 ### 6.1 Software development and web applications
@@ -155,13 +154,12 @@ Any change in the selected courses or their credit values would require recalcul
 ## 9. Limitations
 
 - Credit calculations use the supplied course-and-credit information as the planning baseline.
-- The difference between the 163 credits in the listed semester courses and the 166-credit overall baseline remains to be reconciled against the applicable official curriculum.
 - Proposed assessment changes have not been approved by the university.
 - Existing syllabi and assessments must be checked before concluding that a topic is missing.
 - No measured improvement in student performance, time savings or graduate employability is claimed.
 - No new credits or reductions are proposed.
 - The 21.69% figure measures credits associated with the 11 selected courses; it does not represent content already changed or verified as deficient.
-
+- The 166-credit planning baseline comprises 163 credits from the listed Semester I–VIII courses and 3 credits for IP201 — Internship-I. Internship-I is part of the academic programme; official batch-specific verification remains necessary.
 ## 10. Conclusion
 
 The proposed 2030 redesign prioritizes assessment quality and practical evidence over increasing the programme's credit load. It selects 11 existing courses representing 36 credits, equivalent to 21.69% of the 166-credit overall academic baseline.

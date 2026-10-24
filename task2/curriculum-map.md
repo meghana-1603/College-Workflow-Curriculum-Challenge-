@@ -120,7 +120,7 @@
 | **Total of listed Semester I–VIII courses** | **163** |
 | **Overall academic credit baseline** | **166** |
 
-**Credit reconciliation:** The listed Semester I–VIII course totals sum to 163 credits, while the overall academic baseline is 166 credits. The 3-credit difference remains to be reconciled against the applicable official curriculum. The semester-level totals are preserved as listed.
+**Credit reconciliation**: The listed Semester I–VIII course totals sum to 163 credits. IP201 — Internship-I contributes another 3 academic credits, giving an overall academic baseline of 166 credits. Internship-I is part of the academic programme, not an additional component outside it. Cross-check the total against the applicable 2023–2027 batch record and official regulations before presenting it as an officially verified programme total.
 
 ## Audit interpretation
 
